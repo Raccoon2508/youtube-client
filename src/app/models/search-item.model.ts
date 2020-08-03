@@ -1,10 +1,10 @@
-interface ThumbnailsItem{
+interface ThumbnailsItem {
   url: string;
   width: number;
   height: number;
 }
 
-interface Thumbnails{
+interface Thumbnails {
   default: ThumbnailsItem;
   medium: ThumbnailsItem;
   high: ThumbnailsItem;
@@ -12,14 +12,13 @@ interface Thumbnails{
   maxres: ThumbnailsItem;
 }
 
-
-interface Localized{
+interface Localized {
   title: string;
   description: string;
 }
 
-interface Snippet{
-  publishedAt: Date;
+interface Snippet {
+  publishedAt: string;
   channelId: string;
   title: string;
   description: string;
@@ -28,12 +27,12 @@ interface Snippet{
   tags: string[];
   categoryId: string;
   liveBroadcastContent: string;
-  defaultLanguage: string;
+  defaultLanguage?: string;
   localized: Localized;
   defaultAudioLanguage: string;
 }
 
-interface Statistics{
+interface Statistics {
   viewCount: string;
   likeCount: string;
   dislikeCount: string;
@@ -41,7 +40,7 @@ interface Statistics{
   commentCount: string;
 }
 
-export interface SearchItem{
+export interface SearchItem {
   kind: string;
   etag: string;
   id: string;

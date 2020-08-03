@@ -1,1 +1,8 @@
-<p>search-results works!</p>
+<div class = "search-results-block">
+    <div class = "search-results-wraper">
+        <app-search-item 
+            *ngFor = "let item of searchItemsArray"
+            [item]="item">
+        </app-search-item>
+    </div>
+</div>    

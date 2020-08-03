@@ -8,6 +8,7 @@ import { SearchComponent } from './components/search/search.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { SearchItemComponent } from './components/search-item/search-item.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchItemComponent } from './components/search-item/search-item.compon
     SearchComponent,
     FilterComponent,
     SearchResultsComponent,
-    SearchItemComponent
+    SearchItemComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

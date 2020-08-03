@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchItem } from '../../models/search-item.model';
+import { response } from '../../search-response-exmpl';
 
 @Component({
   selector: 'app-search-results',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-results.component.scss']
 })
 export class SearchResultsComponent implements OnInit {
+  public searchItemsArray: SearchItem[] = response.items;
 
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    
   }
 
 }

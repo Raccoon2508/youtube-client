@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { SearchItem } from '../../models/search-item.model';
+import { isNgTemplate } from '@angular/compiler';
 
 @Component({
   selector: 'app-search-item',
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-item.component.scss']
 })
 export class SearchItemComponent implements OnInit {
+  @Input() public item: SearchItem;
+  public inputItem: SearchItem;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    this.inputItem = this.item;
   }
 
 }
