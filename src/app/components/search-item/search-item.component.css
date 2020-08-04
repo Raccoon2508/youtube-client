@@ -1,6 +1,6 @@
 .search-item {
   width: 250px;
-  height: 250px;
+  height: 300px;
   border-radius: 15px;
   outline: 1px solid red;
   display: -webkit-box;
@@ -13,6 +13,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 1.2;
+  margin: 20px;
+  background-color: #5b7b7a;
+  border-radius: 20px;
+  color: white;
+}
+
+.search-item .search-item__thumbnail {
+  width: 90%;
+  margin-top: 10px;
+}
+
+.search-item .search-item__thumbnail .search-item__thumbnail-img {
+  border-radius: 5px;
+  width: 100%;
 }
 
 .search-item .search-item__counters-panel {

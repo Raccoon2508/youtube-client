@@ -10,6 +10,6 @@ import { response } from './search-response-exmpl';
 export class AppComponent {
  public example: SearchResponse = response;
  public ngOnInit(): void {
-   console.log(response.items[0].kind);
+   console.log(this.example.items[0].kind);
  }
 }

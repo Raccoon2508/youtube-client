@@ -3,19 +3,13 @@
   height: 50px;
   background-color: #3c887e;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
 }
 
 .filter-wraper .filter-block {
@@ -31,6 +25,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @-webkit-keyframes fadeIn {
@@ -51,28 +51,21 @@
   }
 }
 
-@-webkit-keyframes appear {
+@-webkit-keyframes fadeOut {
   from {
-    opacity: 0;
-    display: none;
+    height: 50px;
   }
   to {
-    opacity: 1;
-    display: -webkit-box;
-    display: flex;
+    height: 0px;
   }
 }
 
-@keyframes appear {
+@keyframes fadeOut {
   from {
-    opacity: 0;
-    display: none;
+    height: 50px;
   }
   to {
-    opacity: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 0px;
   }
 }
 /*# sourceMappingURL=filter.component.css.map */
