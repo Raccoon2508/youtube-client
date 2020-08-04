@@ -9,6 +9,8 @@ import { FilterComponent } from './components/filter/filter.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { SearchItemComponent } from './components/search-item/search-item.component';
 import { LoginComponent } from './components/login/login.component';
+import { FilterByWordPipe } from './pipes/filter-by-words.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { LoginComponent } from './components/login/login.component';
     FilterComponent,
     SearchResultsComponent,
     SearchItemComponent,
-    LoginComponent
+    LoginComponent,
+    FilterByWordPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

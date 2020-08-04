@@ -5,8 +5,8 @@
     <button class = "filter-block__filter-criteries-button" (click) = "sortByViews()">Count of views</button>
     <div class = "filter-by-keywors-block">
         
-            <button class = "filter-by-keywors-block__button">By word</button>
-            <input class = "filter-by-keywors-block__input" type = "text">
+            <button class = "filter-by-keywors-block__button" (click) = "sortByWord()">By word</button>
+            <input class = "filter-by-keywors-block__input" type = "text" [(ngModel)] = "sortWord">
         
     </div>
   </div> 

@@ -20,7 +20,7 @@ export class FilterService {
       this.searchResults.sort((a, b) => publishingDate(b) - publishingDate(a));
     } else if (counter === 2) { [...this.searchResults] = this.searchService.itemsArray;  }
   }
-  public sortByViews(counter: number): void{
+  public sortByViews(counter: number): void {
     function counterOfViews(item: SearchItem): number {
       return +item.statistics.viewCount;
     }

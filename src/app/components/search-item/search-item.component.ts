@@ -16,7 +16,5 @@ export class SearchItemComponent implements OnInit {
   }
   public ngAfterViewInit(): void {
     this.thumbnail.nativeElement.src = this.item.snippet.thumbnails.medium.url;
-    console.log(this.thumbnail.nativeElement.src);
   }
-
 }

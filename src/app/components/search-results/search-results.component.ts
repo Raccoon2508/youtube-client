@@ -20,7 +20,6 @@ export class SearchResultsComponent implements OnInit {
 
   public ngDoCheck(): void {
     this.searchItemsArray = this.filterService.searchResults;
-    console.log('dsfsdf')
   }
 
 }
