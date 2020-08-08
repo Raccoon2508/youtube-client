@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SearchService } from './search.service';
+import { BigQuantityPipe } from './big-quantity-pipe.pipe';
 
-describe('SearchService', () => {
-  let service: SearchService;
+describe('BigQuantityPipeService', () => {
+  let service: BigQuantityPipe;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SearchService);
+    service = TestBed.inject(BigQuantityPipe);
   });
 
   it('should be created', () => {

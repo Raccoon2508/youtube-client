@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { YoutubeService } from '../../services/youtube-service.service';
 
 @Component({
   selector: 'app-search',
@@ -6,8 +7,11 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-   constructor() { }
+   constructor( public youtubeService: YoutubeService) { }
    public ngOnInit(): void {
+  }
+  public search(): void {
+     this.youtubeService.startSearch();
   }
 
 }

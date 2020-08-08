@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SortByWordService } from './sort-by-word.service';
+import { SortByViewsPipe } from './sort-by-views.pipe';
 
-describe('SortByWordService', () => {
-  let service: SortByWordService;
+describe('SortByViewsService', () => {
+  let service: SortByViewsPipe;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SortByWordService);
+    service = TestBed.inject(SortByViewsPipe);
   });
 
   it('should be created', () => {

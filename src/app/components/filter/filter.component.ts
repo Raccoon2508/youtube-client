@@ -5,9 +5,7 @@ import { Component,
          EventEmitter,
          ChangeDetectorRef,
          Injectable } from '@angular/core';
-import { OptionsStateService } from '../../services/options-state.service';
-import { FilterService } from '../../services/filter.service';
-import { SortByWordService } from '../../services/sort-by-word.service';
+import { YoutubeService } from '../../services/youtube-service.service';
 
 @Component({
   selector: 'app-filter',
@@ -25,26 +23,24 @@ export class FilterComponent implements OnInit {
   public sortViewsCounter: number = 1;
   public sortWord: string = '';
   public counter: number = 0;
-  constructor( public optionsState: OptionsStateService,
-               public cdr: ChangeDetectorRef,
-               public filterService: FilterService,
-               public sortByWordService: SortByWordService) { }
+  constructor( public cdr: ChangeDetectorRef,
+               public youtubeService: YoutubeService) { }
   public sortByDate(): void {
-    this.filterService.sortByDate(this.sortDateCounter % 3);
+    this.youtubeService.changeSortByDateStrategyNumber(this.sortDateCounter % 3);
     this.sortDateCounter++;
   }
   public sortByViews(): void {
-    this.filterService.sortByViews(this.sortViewsCounter % 3);
+    this.youtubeService.changeSortByViewsStrategyNumber(this.sortViewsCounter % 3);
     this.sortViewsCounter++;
   }
   public sortByWord(): void {
-    this.sortByWordService.changeSortWord(this.sortWord);
+    this.youtubeService.changeSortWord(this.sortWord);
   }
   public ngOnInit(): void {
   }
 
   public ngDoCheck(): void {
-    this.panelVisibility = this.optionsState.optionState;
-    this.sortByWordService.changeSortWord(this.sortWord);
+    this.panelVisibility = this.youtubeService.optionState;
+    this.youtubeService.changeSortWord(this.sortWord);
   }
 }

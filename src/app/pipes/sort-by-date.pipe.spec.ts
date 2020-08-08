@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { OptionsStateService } from './options-state.service';
+import { SortByDatePipe } from './sort-by-date.pipe';
 
-describe('OptionsStateService', () => {
-  let service: OptionsStateService;
+describe('SortByDateService', () => {
+  let service: SortByDatePipe;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(OptionsStateService);
+    service = TestBed.inject(SortByDatePipe);
   });
 
   it('should be created', () => {

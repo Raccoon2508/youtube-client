@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FilterService } from './filter.service';
+import { YoutubeService } from './youtube-service.service';
 
-describe('FilterService', () => {
-  let service: FilterService;
+describe('SearchService', () => {
+  let service: YoutubeService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(FilterService);
+    service = TestBed.inject(YoutubeService);
   });
 
   it('should be created', () => {
