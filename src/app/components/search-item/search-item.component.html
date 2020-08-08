@@ -1,4 +1,4 @@
-<div class = "search-item">
+<div class = "search-item" appColorBorderDate [item] = "item">
     <div class = "search-item__thumbnail" >
         <img class = "search-item__thumbnail-img" src = "blabla" #thumbnail>
     </div>
@@ -6,7 +6,7 @@
         <div class = "search-item__views-counter item-counter">
             <img class = "search-item__views-counter-icon counter-icon"
                  src="/assets/icons/viewed-counter.svg">
-            <p class = "search-item__views-counter counter">{{item.statistics.viewCount}}</p>
+            <p class = "search-item__views-counter counter">{{item.statistics.viewCount | bigQuantityPipe}}</p>
         </div>
         <div class = "search-item__likes-counter item-counter">
             <img class = "search-item__likes-counter-icon counter-icon"

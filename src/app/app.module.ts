@@ -10,7 +10,11 @@ import { SearchResultsComponent } from './components/search-results/search-resul
 import { SearchItemComponent } from './components/search-item/search-item.component';
 import { LoginComponent } from './components/login/login.component';
 import { FilterByWordPipe } from './pipes/filter-by-words.pipe';
+import { SortByDatePipe } from './pipes/sort-by-date.pipe';
+import { SortByViewsPipe } from './pipes/sort-by-views.pipe';
 import { FormsModule } from '@angular/forms';
+import { ColorBorderDateDirective } from './directives/color-border-date.directive';
+import { BigQuantityPipe } from './pipes/big-quantity-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { FormsModule } from '@angular/forms';
     SearchResultsComponent,
     SearchItemComponent,
     LoginComponent,
-    FilterByWordPipe
+    FilterByWordPipe,
+    SortByDatePipe,
+    SortByViewsPipe,
+    ColorBorderDateDirective,
+    BigQuantityPipe
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SearchItem } from '../../models/search-item.model';
-import { response } from '../../search-response-exmpl';
-import { FilterService } from '../../services/filter.service';
+import { YoutubeService } from '../../services/youtube-service.service';
 
 @Component({
   selector: 'app-search-results',
@@ -10,16 +9,16 @@ import { FilterService } from '../../services/filter.service';
 })
 export class SearchResultsComponent implements OnInit {
   public searchItemsArray: SearchItem[];
-  constructor( public filterService: FilterService) {
-    this.searchItemsArray = filterService.searchResults;
+  constructor( public youtubeService: YoutubeService) {
+    this.searchItemsArray = youtubeService.itemsArray;
    }
 
   public ngOnInit(): void {
-    
+
   }
 
   public ngDoCheck(): void {
-    this.searchItemsArray = this.filterService.searchResults;
+    this.searchItemsArray = this.youtubeService.itemsArray;
   }
 
 }
