@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAA;EACZ,gBAAgB,EAAE,iCAAiC;EACnD,eAAe,EAAE,IAAI;EACrB,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,MAAM;EAC3B,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;CACf",
+    "sources": [
+        "registration-form.component.scss"
+    ],
+    "names": [],
+    "file": "registration-form.component.css"
+}

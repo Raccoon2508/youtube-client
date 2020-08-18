@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: 'Roboto';
+}
+
+.youtube-form{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(60, 136, 126);
+  border-radius: 10px;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  color: rgb(224, 242, 233);
+  box-shadow: 10px 10px 10px 5px rgb(161, 124, 107);
+    .youtube-form__button-block{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin: 10px 0px;
+       .youtube-form__button{
+          margin-left:10px;
+        }
+
+    }
+    .youtube-form__label{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-weight: normal;
+        position: relative;
+        .youtube-form__input{
+           font-size: 20px;
+           color: rgb(91, 123, 122);
+        }
+    }
+    .youtube-form__header{
+        align-self: start;
+    }
+}
+
+
+.youtube__button{
+  border: 1px solid rgb(206, 181, 167);
+  border-radius: 5px;
+  background-color: rgb(161, 124, 107);
+  color: rgb(224, 242, 233);
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.youtube__link{
+  cursor: pointer;
+}
+
+.show-pass-button{
+     background-image: url('/assets/icons/eye-icon.png');
+     background-size: 20px;
+     background-repeat: no-repeat;
+     background-position: center;
+     position: absolute;
+     width:25px;
+     height:25px;
+     bottom: -2px;
+     right: -2px;
+}

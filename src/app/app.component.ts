@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SearchResponse } from './models/search-result.model';
+import { SearchResponse } from './youtube/models/search-result.model';
 import { response } from './search-response-exmpl';
 
 @Component({
