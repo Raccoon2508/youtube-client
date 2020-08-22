@@ -29,10 +29,7 @@
         width: 100%;
         font-weight: normal;
         position: relative;
-        .youtube-form__input{
-           font-size: 20px;
-           color: rgb(91, 123, 122);
-        }
+        
     }
     .youtube-form__header{
         align-self: start;
@@ -65,3 +62,26 @@
      bottom: -2px;
      right: -2px;
 }
+
+
+.youtube-form__input{
+&:invalid{
+        background-color: #ffa5a9;
+        animation-duration: 0.5s;
+        animation-name: fade;
+    }
+      
+    @keyframes fade{
+        from{
+          background-color: white;
+        }
+        to{
+          background-color: #ffa5a9;
+        }
+    }
+  } 
+
+  .youtube-form__input{
+           font-size: 20px;
+           color: rgb(91, 123, 122);
+  }

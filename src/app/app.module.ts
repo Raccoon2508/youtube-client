@@ -16,7 +16,7 @@ import { AuthModule } from './auth/auth.module';
     FormsModule,
     CoreModule,
     YoutubeModule,
-    AuthModule
+    AuthModule,
   ],
   exports: [],
   providers: [],

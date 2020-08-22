@@ -1,13 +1,18 @@
-<div class = "filter-wraper"  #filterWraper [class.show]="panelVisibility">
+<div class = "filter-wraper"
+     #filterWraper
+     [class.show]="panelVisibility">
   <div class = "filter-block"> 
     <p class = "filter-block__filter-criteries-title">Sorting by:</p>
-    <button class = "filter-block__filter-criteries-button" (click) = "sortByDate()">Date</button>
-    <button class = "filter-block__filter-criteries-button" (click) = "sortByViews()">Count of views</button>
+    <button class = "filter-block__filter-criteries-button youtube__button"
+            (click) = "sortByDate()">Date</button>
+    <button class = "filter-block__filter-criteries-button youtube__button"
+            (click) = "sortByViews()">Count of views</button>
     <div class = "filter-by-keywors-block">
-        
-            <button class = "filter-by-keywors-block__button" (click) = "sortByWord()">By word</button>
-            <input class = "filter-by-keywors-block__input" type = "text" [(ngModel)] = "sortWord">
-        
+            <button class = "filter-by-keywors-block__button youtube__button"
+                    (click) = "sortByWord()">By word</button>
+            <input class = "filter-by-keywors-block__input youtube-form__input"
+                   type = "text"
+                   [(ngModel)] = "sortWord">
     </div>
   </div> 
 </div>

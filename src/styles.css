@@ -51,11 +51,6 @@
   position: relative;
 }
 
-.youtube-form .youtube-form__label .youtube-form__input {
-  font-size: 20px;
-  color: #5b7b7a;
-}
-
 .youtube-form .youtube-form__header {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
@@ -86,5 +81,36 @@
   height: 25px;
   bottom: -2px;
   right: -2px;
+}
+
+.youtube-form__input:invalid {
+  background-color: #ffa5a9;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+}
+
+@-webkit-keyframes fade {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #ffa5a9;
+  }
+}
+
+@keyframes fade {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #ffa5a9;
+  }
+}
+
+.youtube-form__input {
+  font-size: 20px;
+  color: #5b7b7a;
 }
 /*# sourceMappingURL=styles.css.map */
