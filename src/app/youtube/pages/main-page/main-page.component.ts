@@ -10,7 +10,7 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   public ngOnInit(): void {
-    console.log('hello')
+    console.log('hello');
   }
 
 }

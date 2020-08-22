@@ -8,12 +8,7 @@ import { response } from './search-response-exmpl';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
- public example: SearchResponse = response;
- // tslint:disable-next-line: typedef
- public title(title: string) {
-   throw new Error('Method not implemented.');
- }
- public ngOnInit(): void {
-   console.log(this.example.items[0].kind);
+  // tslint:disable-next-line: typedef
+  public ngOnInit(): void {
  }
 }

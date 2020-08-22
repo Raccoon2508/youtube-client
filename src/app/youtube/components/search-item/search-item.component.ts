@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { SearchItem } from '../../models/search-item.model';
 import { Router } from '@angular/router';
+import { ColorBorderDateDirective } from '../../directives/color-border-date.directive';
 
 @Component({
   selector: 'app-search-item',
