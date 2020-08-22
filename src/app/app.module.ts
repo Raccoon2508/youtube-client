@@ -3,32 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { SearchComponent } from './components/search/search.component';
-import { FilterComponent } from './components/filter/filter.component';
-import { SearchResultsComponent } from './components/search-results/search-results.component';
-import { SearchItemComponent } from './components/search-item/search-item.component';
-import { LoginComponent } from './components/login/login.component';
-import { FilterByWordPipe } from './pipes/filter-by-words.pipe';
 import { FormsModule } from '@angular/forms';
+import { CoreModule } from '../app/core/core.module';
+import { YoutubeModule } from './youtube/youtube.module';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    SearchComponent,
-    FilterComponent,
-    SearchResultsComponent,
-    SearchItemComponent,
-    LoginComponent,
-    FilterByWordPipe
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CoreModule,
+    YoutubeModule,
+    AuthModule,
   ],
+  exports: [],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

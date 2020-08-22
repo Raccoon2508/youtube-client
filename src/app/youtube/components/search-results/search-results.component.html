@@ -1,0 +1,8 @@
+<div class = "search-results-block">
+    <div class = "search-results-wraper">
+        <app-search-item 
+            *ngFor = "let item of (searchItemsArray | sortByViews | sortByDate | filterByWord)"
+            [item]="item">
+        </app-search-item>
+    </div>
+</div>    

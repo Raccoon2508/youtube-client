@@ -1,2 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Roboto';
+}
+
+.youtube-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #3c887e;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  padding: 20px;
+  color: #e0f2e9;
+  -webkit-box-shadow: 10px 10px 10px 5px #a17c6b;
+          box-shadow: 10px 10px 10px 5px #a17c6b;
+}
+
+.youtube-form .youtube-form__button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.youtube-form .youtube-form__button-block .youtube-form__button {
+  margin-left: 10px;
+}
+
+.youtube-form .youtube-form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  font-weight: normal;
+  position: relative;
+}
+
+.youtube-form .youtube-form__header {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.youtube__button {
+  border: 1px solid #ceb5a7;
+  border-radius: 5px;
+  background-color: #a17c6b;
+  color: #e0f2e9;
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.youtube__link {
+  cursor: pointer;
+}
+
+.show-pass-button {
+  background-image: url("/assets/icons/eye-icon.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: -2px;
+  right: -2px;
+}
+
+.youtube-form__input:invalid {
+  background-color: #ffa5a9;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+}
+
+@-webkit-keyframes fade {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #ffa5a9;
+  }
+}
+
+@keyframes fade {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #ffa5a9;
+  }
+}
+
+.youtube-form__input {
+  font-size: 20px;
+  color: #5b7b7a;
+}
 /*# sourceMappingURL=styles.css.map */

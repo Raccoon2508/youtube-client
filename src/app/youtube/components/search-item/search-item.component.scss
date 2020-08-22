@@ -1,0 +1,46 @@
+.search-item{
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+    margin: 20px;
+    background-color: rgb(91, 123, 122);
+    border-radius: 20px;
+    color: white;
+    border-bottom: 10px solid transparent;
+    .search-item__thumbnail{
+      width: 90%;
+      margin-top: 10px;
+      .search-item__thumbnail-img{
+        border-radius: 5px;  
+        width: 100%;
+      }
+    }
+    .search-item__counters-panel{
+      display: flex;
+      width: 90%;
+    }
+    .item-counter{
+        display:flex;
+        width:25%;
+        font-size: 12px;
+       
+        
+    }
+    .counter{
+       margin-left: 5px;
+    }
+    .search-item__views-counter{
+          width:30%;
+    }
+    .search-item__title{
+        text-align: center;
+        font-size: 20px;
+        font-weight: normal;
+        width: 90%;
+        margin-top: 0px;
+    }
+}

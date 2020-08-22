@@ -1,0 +1,34 @@
+<div class = "item-info-page">
+<article class = "item-info-article" appColorBorderDate [item] = "item">
+    <div class = "item-info-article__thumbnail">
+        <iframe class = "item-info-article__thumbnail-video" src='https://www.youtube.com/embed/tgbNymZ7vqY' frameborder="0" #thumbnail></iframe>
+    </div>
+    <div class = "item-info-article__description-part">
+    <div class = "item-info-article__header">
+        <h2 class = "item-info-article__title">{{item.snippet.title}}</h2>
+        <h3 class = "item-info-article__publishing-date">{{item.snippet.publishedAt | date:'h:mm:ss'}}</h3>
+    </div>    
+    <p class = "item-info-article__description">{{item.snippet.description}}</p>
+    <div class="item-info-article__counters-panel">
+        <div class="item-info-article__views-counter item-counter">
+            <img class="item-info-article__views-counter-icon counter-icon" src="/assets/icons/viewed-counter.svg">
+            <p class="item-info-article__views-counter counter">{{item.statistics.viewCount | bigQuantityPipe}}</p>
+        </div>
+        <div class="item-info-article__likes-counter item-counter">
+            <img class="item-info-article__likes-counter-icon counter-icon" src="/assets/icons/like-counter.svg">
+            <p class="item-info-article__likes-counter counter">{{item.statistics.likeCount}}</p>
+        </div>
+        <div class="item-info-article__dislikes-counter item-counter">
+            <img class="item-info-article__dislikes-counter-icon counter-icon" src="/assets/icons/dislike-counter.svg">
+            <p class="item-info-article__dislikes-counter counter">{{item.statistics.dislikeCount}}</p>
+    
+        </div>
+        <div class="item-info-article__comments-counter item-counter">
+            <img class="item-info-article__comments-counter-icon counter-icon" src="/assets/icons/comment-counter.svg">
+            <p class="item-info-article__comment-counter counter">{{item.statistics.commentCount}}</p>
+        </div>
+    </div>
+    <button class = "item-info-article__back-button youtube__button" (click) = "goBack()">Back</button>
+    </div>    
+</article>
+</div>    
