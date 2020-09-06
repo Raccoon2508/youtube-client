@@ -28,7 +28,9 @@ export class YoutubeService {
   constructor(public http: HttpClient,
               public authService: AuthService) {
                 this.authService.authYoutbeKeyEmit.subscribe(key => {
-                  if (key) { this.youtubeAccessKey = key; }
+                  if (key) { this.youtubeAccessKey = key;
+                             localStorage.setItem('youtubeKey', key);
+                  }
                 });
               }
 
@@ -49,7 +51,7 @@ export class YoutubeService {
   public searchVideo(word: string): void {
     let params: {} = { // query params for first response
       q: word,
-      key: this.youtubeAccessKey,
+      key: localStorage.getItem('youtubeKey'),
       maxResults: 24,
     };
 
@@ -69,7 +71,7 @@ export class YoutubeService {
        let searchVideoListParams: {} = {         // query params for videos list response
          part: 'snippet,statistics',
          id: idsArray,
-         key: this.youtubeAccessKey,
+         key: localStorage.getItem('youtubeKey'),
        };
        return this.http.get(this.youtubeVideosApiLink, {
          params: searchVideoListParams }
