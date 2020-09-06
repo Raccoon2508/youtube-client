@@ -1,0 +1,7 @@
+<form class = "search-block" [formGroup]="myForm">
+    <input class = "search-block__search-input youtube-form__input"
+           type = "text"
+           [(ngModel)]='searchInput'
+           formControlName='searchInput'>
+    <p class = "search-block__debounce-timer">{{timer}}</p>       
+</form>

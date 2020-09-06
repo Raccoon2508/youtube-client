@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SearchResponse } from './models/search-result.model';
+import { SearchResponse } from './youtube/models/search-result.model';
 import { response } from './search-response-exmpl';
 
 @Component({
@@ -8,8 +8,7 @@ import { response } from './search-response-exmpl';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
- public example: SearchResponse = response;
- public ngOnInit(): void {
-   console.log(this.example.items[0].kind);
+  // tslint:disable-next-line: typedef
+  public ngOnInit(): void {
  }
 }

@@ -1,0 +1,50 @@
+.filter-wraper{
+    width:100%;
+    background-color: rgb(60, 136, 126);
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    .filter-block{
+      max-width: 800px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
+
+.show{
+      display:flex;
+} 
+
+
+@media screen and (max-width: 650px) {
+    .filter-block{
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
+
+
+@keyframes fadeIn {
+      from{
+        height:0px;
+      }
+      to{
+        height:50px;
+      }
+    }
+@keyframes fadeOut {
+    from{
+        height:50px;
+      }
+      to{
+        height:0px;
+      }
+    } 
