@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-page404',
@@ -7,9 +8,17 @@ import { Component, OnInit, ElementRef } from '@angular/core';
 })
 export class Page404Component implements OnInit {
 
-  constructor() { }
+  constructor( public router: Router) { }
 
   public ngOnInit(): void {
+  }
+
+  public navigateToLoginPage(): void {
+    this.router.navigate(['auth']);
+  }
+
+  public navigateToYoutubePage(): void {
+    this.router.navigateByUrl('https://www.youtube.com/');
   }
 
 }

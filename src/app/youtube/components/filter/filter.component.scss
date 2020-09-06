@@ -1,11 +1,11 @@
 .filter-wraper{
     width:100%;
-    height:50px;
     background-color: rgb(60, 136, 126);
     color: white;
     display: none;
     align-items: center;
     justify-content: center;
+    
     .filter-block{
       max-width: 800px;
       display: flex;
@@ -18,6 +18,18 @@
 .show{
       display:flex;
 } 
+
+
+@media screen and (max-width: 650px) {
+    .filter-block{
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
 
 
 @keyframes fadeIn {

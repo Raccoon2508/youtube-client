@@ -1,0 +1,11 @@
+.search-block{
+    position: relative;
+    .search-block__debounce-timer{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    top: -16px;
+    right: 5px;
+    color: rgb(91, 123, 122);
+    }
+}

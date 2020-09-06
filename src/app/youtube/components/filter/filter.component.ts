@@ -49,6 +49,5 @@ export class FilterComponent implements OnInit {
   public ngDoCheck(): void {
     this.panelVisibility = this.youtubeService.optionState;
     this.youtubeService.changeSortWord(this.sortWord);
-    console.log(this.panelVisibility);
   }
 }

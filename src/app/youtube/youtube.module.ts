@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SearchComponent } from './components/search/search.component';
 import { FilterComponent } from './components/filter/filter.component';
@@ -34,7 +34,7 @@ import { RouterPageComponent } from './pages/router-page/router-page.component';
     LoginComponent,
     RouterPageComponent
   ],
-  imports: [CommonModule, FormsModule, YoutubeRoutingModule],
+  imports: [CommonModule, FormsModule, YoutubeRoutingModule, ReactiveFormsModule],
   exports: [HeaderComponent]
 })
 export class YoutubeModule {}
