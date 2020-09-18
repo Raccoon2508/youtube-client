@@ -1,0 +1,28 @@
+<div class="login-form youtube-form">
+    <h2 class="login-form__header youtube-form__header">Login</h2>
+    <label class="login-form__label-login youtube-form__label">login (email)
+        <input class="login-form__input-login youtube-form__input"
+               type = "email"
+               [(ngModel)] = "loginEmail">
+    </label>
+    <label class="login-form__label-password youtube-form__label">password
+        <input class="login-form__input-password youtube-form__input"
+               [attr.type] = "passInputType"
+               [(ngModel)] = "loginPassword">
+        <button class="user-login-form__show-pass youtube__button show-pass-button" (click)="showPass()"></button>
+    </label>
+    <div class="login-form__button-block youtube-form__button-block">
+        <a [routerLink] = "['registration']"
+           routerLinkActive = "active"
+           class="login-form__registration-link youtube-form__button youtube__link" 
+           >
+            Registration
+        </a>
+        <button class="login-form__login-button youtube__button" (click) = "login()">
+            Login
+        </button>
+        <button class="login-form__back-button youtube__button" (click) = "goBack()">
+            Back    
+        </button>
+    </div>
+</div>

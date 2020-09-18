@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "router-page.component.scss"
+    ],
+    "names": [],
+    "file": "router-page.component.css"
+}

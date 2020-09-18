@@ -1,0 +1,10 @@
+.login-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #5b7b7a;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ceb5a7;
+}
+/*# sourceMappingURL=login.component.css.map */

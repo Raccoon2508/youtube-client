@@ -1,0 +1,30 @@
+<div class="registration-form youtube-form">
+    <h2 class="registration-form__header youtube-form__header">New User</h2>
+    <label class="registration-form__label-name youtube-form__label">name
+        <input class="registration-form__input-name youtube-form__input">
+    </label>
+    <label class="registration-form__label-email youtube-form__label">email
+        <input class="registration-form__input-email youtube-form__input"
+               type="email"
+               [(ngModel)]="email">
+    </label>
+    <label class="registration-form__label-password youtube-form__label">password
+        <input class="registration-form__input-password youtube-form__input"
+               [attr.type] = "passInputType">
+        <button class="user-login-form__show-pass youtube__button show-pass-button" (click)="showPass()"></button>
+    </label>
+    <label class="registration-form__label-repeat-password youtube-form__label">repeat password
+        <input class="registration-form__repeat-password youtube-form__input"
+               [attr.type] = "passInputType">
+    </label>
+    <div class="registration-form__button-block youtube-form__button-block">
+        
+        <button class="registration-form__login-button youtube__button">
+            Registrate   
+        </button>
+        <button class="registration-form__login-button youtube__button"
+                (click)="goBack()">
+            Back
+        </button>
+    </div>
+</div>

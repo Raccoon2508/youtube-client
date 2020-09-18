@@ -1,0 +1,22 @@
+.page404{
+  background-color: rgb(60, 136, 126);
+  height: 100%;
+  .page404__image{
+    height: 300px;
+  }
+  .page404__wraper{
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(224, 242, 233);
+    .page404__title{
+      font-size: 200px;
+      margin: 0px;
+    }
+  }
+}
