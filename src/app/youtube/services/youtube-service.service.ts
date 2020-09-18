@@ -49,9 +49,10 @@ export class YoutubeService {
       : (this.optionState = true);
   }
   public searchVideo(word: string): void {
-    let params: {} = { // query params for first response
+    let params: {} = {
+      // query params for first response
       q: word,
-      key: localStorage.getItem('youtubeKey'),
+      key: youtubeKey,
       maxResults: 24,
     };
 
