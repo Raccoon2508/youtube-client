@@ -68,10 +68,11 @@ export class YoutubeService {
     this.youtubeSearchApiLink, {params}
     ).pipe(mergeMap( (result: YoutubeSearchListResponse) => {
        const idsArray: string[] = getVideosId(result);
-       let searchVideoListParams: {} = {         // query params for videos list response
+       let searchVideoListParams: {} = {
+         // query params for videos list response
          part: 'snippet,statistics',
          id: idsArray,
-         key: localStorage.getItem('youtubeKey'),
+         key: youtubeKey,
        };
        return this.http.get(this.youtubeVideosApiLink, {
          params: searchVideoListParams }
